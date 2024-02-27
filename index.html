@@ -10,17 +10,14 @@
         <?php
         $url = 'https://zukijourney.xyzbot.net';
 
-        function getApiStatusAndLatency($url) {
-            $status = get_headers($url, 1)[0];
-            $time_start = microtime(true);
-            $content = file_get_contents($url);
-            $time_end = microtime(true);
-            $latency = round(($time_end - $time_start) * 1000, 2); 
-            echo "Status API url $url: $status <br>";
-            echo "Průměrná latence API: $latency ms";
-        }
+        $status = get_headers($url, 1)[0];
+        $time_start = microtime(true);
+        $content = file_get_contents($url);
+        $time_end = microtime(true);
+        $latency = round(($time_end - $time_start) * 1000, 2); 
 
-        getApiStatusAndLatency($url);
+        echo "<p>Status API url $url: $status</p>";
+        echo "<p>Průměrná latence API: $latency ms</p>";
         ?>
     </div>
 </body>
