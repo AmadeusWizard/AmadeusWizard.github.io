@@ -1,0 +1,296 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "gpt-4",
+      "object": "proxy",
+      "proxy_to": "gpt-4-0613"
+    },
+    {
+      "id": "gpt-4-vision-preview",
+      "object": "model",
+      "limiter": "default-gpt-4-vision-preview",
+      "pricing": {
+        "per_input_token": "0.0000025",
+        "per_output_token": "0.0000075",
+        "tokens_per_input_image": 150
+      }
+    },
+    {
+      "id": "gpt-4-turbo-preview",
+      "object": "proxy",
+      "proxy_to": "gpt-4-0125-preview"
+    },
+    {
+      "id": "gpt-4-0125-preview",
+      "object": "model",
+      "limiter": "gpt-4-turbo-preview",
+      "pricing": {
+        "per_input_token": "0.0000025",
+        "per_output_token": "0.0000075"
+      }
+    },
+    {
+      "id": "gpt-4-1106-preview",
+      "object": "model",
+      "limiter": "gpt-4-turbo-preview",
+      "pricing": {
+        "per_input_token": "0.0000025",
+        "per_output_token": "0.0000075"
+      }
+    },
+    {
+      "id": "gpt-4-0613",
+      "object": "model",
+      "limiter": "default-gpt-4",
+      "pricing": {
+        "per_input_token": "0.0000075",
+        "per_output_token": "0.000015"
+      }
+    },
+    {
+      "id": "gpt-3.5-turbo",
+      "object": "proxy",
+      "proxy_to": "gpt-3.5-turbo-0613"
+    },
+    {
+      "id": "gpt-3.5-turbo-0125",
+      "object": "model",
+      "limiter": "default-gpt-3.5-turbo",
+      "pricing": {
+        "per_input_token": "1.25E-7",
+        "per_output_token": "3.75E-7"
+      }
+    },
+    {
+      "id": "gpt-3.5-turbo-1106",
+      "object": "model",
+      "limiter": "default-gpt-3.5-turbo",
+      "pricing": {
+        "per_input_token": "2.5E-7",
+        "per_output_token": "5E-7"
+      }
+    },
+    {
+      "id": "gpt-3.5-turbo-0613",
+      "object": "model",
+      "limiter": "default-gpt-3.5-turbo",
+      "pricing": {
+        "per_input_token": "3.75E-7",
+        "per_output_token": "5E-7"
+      }
+    },
+    {
+      "id": "claude-2",
+      "object": "model",
+      "limiter": "default-claude-2",
+      "pricing": {
+        "per_input_token": "0.000001102",
+        "per_output_token": "0.000003268"
+      }
+    },
+    {
+      "id": "claude-instant",
+      "object": "model",
+      "limiter": "default-claude-instant",
+      "pricing": {
+        "per_input_token": "1.63E-7",
+        "per_output_token": "5.51E-7"
+      }
+    },
+    {
+      "id": "gemini-pro",
+      "object": "model",
+      "limiter": "default-gemini-pro",
+      "pricing": {
+        "per_input_token": "6.25E-8",
+        "per_output_token": "1.25E-7"
+      }
+    },
+    {
+      "id": "gemini-pro-vision",
+      "object": "model",
+      "limiter": "default-gemini-pro",
+      "pricing": {
+        "per_input_token": "6.25E-8",
+        "per_output_token": "1.25E-7",
+        "tokens_per_input_image": 150
+      }
+    },
+    {
+      "id": "llama-2-70b-chat",
+      "object": "model",
+      "limiter": "default-llama-2-70b-chat",
+      "pricing": {
+        "per_input_token": "1.166666666666666666666666667E-7",
+        "per_output_token": "1.583333333333333333333333333E-7"
+      }
+    },
+    {
+      "id": "llama-2-13b-chat",
+      "object": "model",
+      "limiter": "default-llama-2-13b-chat",
+      "pricing": {
+        "per_input_token": "5.833333333333333333333333333E-8",
+        "per_output_token": "5.833333333333333333333333333E-8"
+      }
+    },
+    {
+      "id": "llama-2-7b-chat",
+      "object": "model",
+      "limiter": "default-llama-2-7b-chat",
+      "pricing": {
+        "per_input_token": "3.333333333333333333333333333E-8",
+        "per_output_token": "3.333333333333333333333333333E-8"
+      }
+    },
+    {
+      "id": "mistral-7b",
+      "object": "model",
+      "limiter": "default-mistral-7b",
+      "pricing": {
+        "per_input_token": "3.333333333333333333333333333E-8",
+        "per_output_token": "3.333333333333333333333333333E-8"
+      }
+    },
+    {
+      "id": "mixtral-8x7b",
+      "object": "model",
+      "limiter": "default-mixtral-8x7b",
+      "pricing": {
+        "per_input_token": "4.5E-8",
+        "per_output_token": "4.5E-8"
+      }
+    },
+    {
+      "id": "midjourney",
+      "object": "model",
+      "max_images": 4,
+      "multiple_of": 4,
+      "limiter": "default-midjourney",
+      "pricing": {
+        "per_image": "0.005"
+      }
+    },
+    {
+      "id": "dall-e-3",
+      "object": "model",
+      "max_images": 4,
+      "limiter": "default-dall-e-3",
+      "pricing": {
+        "per_image": "0.010"
+      }
+    },
+    {
+      "id": "sdxl",
+      "object": "model",
+      "max_images": 5,
+      "limiter": "default-sdxl",
+      "pricing": {
+        "per_image": "0.005"
+      }
+    },
+    {
+      "id": "kandinsky-3",
+      "object": "model",
+      "max_images": 10,
+      "limiter": "default-kandinsky-3",
+      "pricing": {
+        "per_image": "0.005"
+      }
+    },
+    {
+      "id": "kandinsky-2.2",
+      "object": "model",
+      "max_images": 10,
+      "limiter": "default-kandinsky-2",
+      "pricing": {
+        "per_image": "0.0025"
+      }
+    },
+    {
+      "id": "kandinsky-2",
+      "object": "model",
+      "max_images": 10,
+      "limiter": "default-kandinsky-2",
+      "pricing": {
+        "per_image": "0.0025"
+      }
+    },
+    {
+      "id": "stable-diffusion-2.1",
+      "object": "model",
+      "max_images": 10,
+      "limiter": "default-stable-diffusion-2",
+      "pricing": {
+        "per_image": "0.005"
+      }
+    },
+    {
+      "id": "text-embedding-3-small",
+      "object": "model",
+      "limiter": "default-text-embedding-3-small",
+      "pricing": {
+        "per_token": "5E-9"
+      }
+    },
+    {
+      "id": "text-embedding-3-large",
+      "object": "model",
+      "limiter": "default-text-embedding-3-large",
+      "pricing": {
+        "per_token": "3.25E-8"
+      }
+    },
+    {
+      "id": "text-embedding-ada-002",
+      "object": "model",
+      "limiter": "default-text-embedding-ada-002",
+      "pricing": {
+        "per_token": "2.5E-8"
+      }
+    },
+    {
+      "id": "bge-large-en-v1.5",
+      "object": "model",
+      "limiter": "default-bge-large-en-v1.5",
+      "pricing": {
+        "per_token": "5E-8"
+      }
+    },
+    {
+      "id": "text-moderation-latest",
+      "object": "model",
+      "limiter": "default-moderation-api"
+    },
+    {
+      "id": "text-moderation-stable",
+      "object": "model",
+      "limiter": "default-moderation-api"
+    },
+    {
+      "id": "whisper-1",
+      "object": "model",
+      "limiter": "default-whisper-1",
+      "pricing": {
+        "per_second": "0.000025"
+      }
+    },
+    {
+      "id": "m2m100-1.2b",
+      "object": "model",
+      "limiter": "default-m2m100-1.2b",
+      "pricing": {
+        "per_second": "0.0000125"
+      }
+    },
+    {
+      "id": "google-tts-1",
+      "object": "model",
+      "limiter": "default-google-tts-1",
+      "pricing": {
+        "per_character": "6.666666666666666666666666667E-7"
+      }
+    }
+  ]
+}
