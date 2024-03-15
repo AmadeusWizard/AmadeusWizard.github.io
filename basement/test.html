@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galerie</title>
+  <style>
+    /* Styly pro rozhraní */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .menu {
+      flex: 0 0 200px;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Welcome to the Gallery</h1>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+          <img src="image3.jpg" alt="Image 3">
+        </div>
+        <!-- Add more gallery items as needed -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
